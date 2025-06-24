@@ -6,3 +6,11 @@
 # run = ["sh", "-c", "python app.py"]
 language = "python3"
 run = "python app.py"
+modules = ["python-base-3.13"]
+
+[nix]
+packages = ["python38Packages.pip"]
+
+[[ports]]
+localPort = 5000
+externalPort = 80
